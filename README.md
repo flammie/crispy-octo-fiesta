@@ -14,6 +14,8 @@ Order of in how well I know them kind of:
 1. Java
 1. Ruby
 1. C#
+1. Basic (but no easily accessible floss parser or compiler)
+1. Pascal
 
 ## Hello world
 
@@ -41,6 +43,12 @@ strings.)
 
 This test is interesting since it shows how bad some of my otherwise favorite
 langauges are really quite bad indeed; string handling in C is quite pain.
+The standard for splitting in C is of course based on `strtok`, which is not
+very neat function to work with. `getline` or `getdelim` is a bit nicer. C++
+does not have much more to help with, I went with string functions mainly,
+there would be another option of using more functional approach with string
+stream iterators probably, I don't find that style of programming very readable
+or maintainable and usually pain to write.
 
 ## Command-line arguments
 
@@ -49,7 +57,26 @@ sciences happens through command-line hacking, and we need tools that maybe can
 handle a bit of standard-ish command-lines even though it is not so popular with
 young people anymore again.
 
+In C the `getopt_long` from GNU is the gold standard that all others should be
+modelled after. It may not have ideal implementation with global state and
+destructive operation on stuff but it handles permutations and such in a way we
+all expect.
+
+In Python's standard library there is `ArgumentParser` that is quite pythonic
+and easy to use and works reasonably well.
+
+For C++ there isn't anything particularly standard or popular, boost has some
+stuff but boost is kind of meh for a lot of reasons. I have seen cxxopts but
+barely trying to understand the parentheses hell that its normal way to declare
+arguments is (that breaks all current code formatters btw)... yeah,
+demonstrating this as the best c++ way would be just mean.
+
 ## Localisation
 
 I've been localiser for a good while now, I like to know how hard it is to
 localise stuff properly in the languages I learn.
+
+In the FLOSS localisation, `gettext` is the traditional gold standard, there are
+others but they do not get used that much. Linguistically gettext is quite poor,
+it only supports one numeral *plural forms* thing as a linguistic concept and
+everything else is 1:1 string to string translations.
