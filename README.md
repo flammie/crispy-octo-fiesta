@@ -2,7 +2,7 @@
 
 I experiment with programming languages? The name was suggested by github.
 
-Order of in how well I know them kind of:
+Here's the programming languages in order of in how well I know them kind of:
 
 1. Python
 1. C
@@ -16,6 +16,17 @@ Order of in how well I know them kind of:
 1. C#
 1. Basic (but no easily accessible floss parser or compiler)
 1. Pascal
+1. javascript (currently using nodejs for command line running)
+
+Here's the list of experiments in order of complexity:
+
+1. Hello world
+1. Read CSV from file, print TSV to file
+1. Handle command-line parametres
+1. Software localisation and translation
+1. Something about data structures and algorithms
+
+Following is the description of the experiments.
 
 ## Hello world
 
@@ -70,6 +81,9 @@ stuff but boost is kind of meh for a lot of reasons. I have seen cxxopts but
 barely trying to understand the parentheses hell that its normal way to declare
 arguments is (that breaks all current code formatters btw)... yeah,
 demonstrating this as the best c++ way would be just mean.
+
+In rust there was couple of options to parse command-lines, they seem to slowly
+converge in having only `clap` left so I've gone with that.
 
 ## Localisation
 
