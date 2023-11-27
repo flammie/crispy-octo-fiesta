@@ -94,3 +94,10 @@ In the FLOSS localisation, `gettext` is the traditional gold standard, there are
 others but they do not get used that much. Linguistically gettext is quite poor,
 it only supports one numeral *plural forms* thing as a linguistic concept and
 everything else is 1:1 string to string translations.
+
+## Data structures and algorithms
+
+More basic parts of computer science curriculum, data structures are an
+interesting experiment cause they really need to test the programming languages
+features for handling datatypes, pointers and cyclic pointers and memory
+management and stuff.
