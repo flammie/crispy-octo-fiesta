@@ -42,12 +42,16 @@ void list_delete(list_t* l) {
     free(l);
 }
 
+void list_push(list_t* l, void* data) {
+    listitem_t* oldhead = l->head;
+    l->head = listitem_new(data);
+    l->head->next = oldhead;
+    return;
+}
+
 void list_insert(list_t* l, void* data, size_t index) {
     if (index == 0) {
-        listitem_t* oldhead = l->head;
-        l->head = listitem_new(data);
-        l->head->next = oldhead;
-        return;
+        return list_push(l, data);
     }
     listitem_t* p = l->head;
     listitem_t* prev = NULL;
@@ -59,12 +63,15 @@ void list_insert(list_t* l, void* data, size_t index) {
     prev->next->next = p;
 }
 
+void list_pop(list_t* l) {
+    listitem_t* oldhead = l->head;
+    l->head = l->head->next;
+    listitem_delete(oldhead);
+}
+
 void list_remove(list_t* l, size_t index) {
     if (index == 0) {
-        listitem_t* oldhead = l->head;
-        l->head = l->head->next;
-        listitem_delete(oldhead);
-        return;
+        return list_pop(l);
     }
     listitem_t* p = l->head;
     listitem_t* prev = NULL;
