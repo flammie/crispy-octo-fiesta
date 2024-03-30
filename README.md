@@ -102,4 +102,6 @@ interesting experiment cause they really need to test the programming languages
 features for handling datatypes, pointers and cyclic pointers and memory
 management and stuff. Old programming languages like C, C++ I could write from
 my head, the rust is based on [too many lists
-tutorial](https://rust-unofficial.github.io/too-many-lists)
+tutorial](https://rust-unofficial.github.io/too-many-lists), which
+unfortunately does not really follow what I think is classical linked list and
+goes on odd tangents to teach features of rust but was a good starting point.
