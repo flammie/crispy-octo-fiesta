@@ -100,4 +100,6 @@ everything else is 1:1 string to string translations.
 More basic parts of computer science curriculum, data structures are an
 interesting experiment cause they really need to test the programming languages
 features for handling datatypes, pointers and cyclic pointers and memory
-management and stuff.
+management and stuff. Old programming languages like C, C++ I could write from
+my head, the rust is based on [too many lists
+tutorial](https://rust-unofficial.github.io/too-many-lists)
