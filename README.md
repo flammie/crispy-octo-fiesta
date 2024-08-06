@@ -40,6 +40,17 @@ language has in very typical setting, e.g. for python runnables you generally
 always do write the blurb and also I take into account what each languages'
 linters say.
 
+## FizzBuzz
+
+It's not super interesting, but a good way to spend time early in learning
+programming language. A program that writes or makes a list of numbers, except
+if the number is divisible by 3 it writes Fizz and divisible by 5 it writes
+Buzz, so when it's divisible with 15 it writes FizzBuzz. This is a good example
+of where mediocre programmers will sacrifice readability of code to make
+unnecessary optimisations; there are many ways to be clever about this code that
+make the code "more optimal" but the best way is to make it the most readable by
+having 4 cases separately just.
+
 ## File i/o, string split and join
 
 One of the gold standard tests I use for programming languages as a programmer
