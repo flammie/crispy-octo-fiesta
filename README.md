@@ -40,6 +40,18 @@ language has in very typical setting, e.g. for python runnables you generally
 always do write the blurb and also I take into account what each languages'
 linters say.
 
+There shouldn't be much to say about this it should be a kind of a oneliner in
+most of programming languages. I do want to point out how horrible the C++
+standard for printing output with bit shift operator over some random nonsense
+things is, I am 99 % sure the authors of the language did it to show off cool
+new features like operator overloading and implicit conversions but it makes
+code unreadable, strings unlocaliseable and is just a general pain in the ass.
+In C++-23 this was fixed with introduction of `println` taken from better
+programming languages, however, as of 2025 compiling a hello world using
+std::println() produces a binary of 1 megabyte versus few kilobytes of the old
+version, and disassembly shows that the  main function runs 1000 times more
+instructions, so maybe not an ideal solution yet.
+
 ## FizzBuzz
 
 It's not super interesting, but a good way to spend time early in learning
