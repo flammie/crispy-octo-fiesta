@@ -13,7 +13,7 @@ struct stackitem {
 
 typedef struct stack {
     stackitem_t* top;
-} stack_t;
+} shtack_t; // on MaC OS X <sys/types.h> contains stack_t :-(
 
 stackitem_t* stackitem_new(void* data) {
     stackitem_t* rv = malloc(sizeof(stackitem_t));
@@ -26,13 +26,13 @@ void stackitem_delete(stackitem_t* si) {
     free(si);
 }
 
-stack_t* stack_new() {
-    stack_t* rv = malloc(sizeof(stack_t));
+shtack_t* stack_new() {
+    shtack_t* rv = malloc(sizeof(shtack_t));
     rv->top = NULL;
     return rv;
 }
 
-void stack_delete(stack_t* s) {
+void stack_delete(shtack_t* s) {
     stackitem_t* p = s->top;
     while (p != NULL) {
         stackitem_t* next = p->next;
@@ -42,14 +42,14 @@ void stack_delete(stack_t* s) {
     free(s);
 }
 
-void stack_push(stack_t* s, void* data) {
+void stack_push(shtack_t* s, void* data) {
     stackitem_t* newtop = stackitem_new(data);
     newtop->next = s->top;
     s->top = newtop;
     return;
 }
 
-void* stack_pop(stack_t* s) {
+void* stack_pop(shtack_t* s) {
     stackitem_t* oldtop = s->top;
     void* rv = oldtop->data;
     s->top = s->top->next;
@@ -58,7 +58,7 @@ void* stack_pop(stack_t* s) {
 }
 
 int main(int argc, char** argv) {
-    stack_t* s = stack_new();
+    shtack_t* s = stack_new();
     printf("pushing: ");
     for (int i = 0; i < argc; i++) {
         printf("%d %s... ", i, argv[i]);
