@@ -17,6 +17,7 @@ Here's the programming languages in order of in how well I know them kind of:
 1. Basic (but no easily accessible floss parser or compiler)
 1. Pascal
 1. javascript (currently using nodejs for command line running)
+1. Zig
 
 Here's the list of experiments in order of complexity:
 
