@@ -1,0 +1,93 @@
+# Finnish translations for PACKAGE package.
+# Copyright (C) 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#  <flammie@iki.fi>, 2023.
+#
+#: localise.c:65
+#, c-format
+msgid ""
+msgstr ""
+"Project-Id-Version: crispy-octo-fiesta 0.0.0\n"
+"Report-Msgid-Bugs-To: Flammie <flammie@iki.fi>\n"
+"POT-Creation-Date: 2025-10-12 14:46+0200\n"
+"PO-Revision-Date: 2025-10-12 14:26+0200\n"
+"Last-Translator: Flammie A Pirinen <flammie@iki.fi>\n"
+"Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: localise.c:25
+#, c-format
+msgid "Hello world!\n"
+msgstr "Heippa maailma.\n"
+
+#: localise.c:27
+#, c-format
+msgid "There is now %d wug.\n"
+msgid_plural "There are now %d wugs.\n"
+msgstr[0] "Siinä on nyt %d wug.\n"
+msgstr[1] "Siinä on nyt %d wugia.\n"
+
+#: localise.c:31
+#, c-format
+msgid "Unrecognised command line argument %s\n"
+msgstr "Tunnistamaton komentoriviargumentti %s\n"
+
+#: localise.c:41 localise.c:54
+#, c-format
+msgid "Do you want to %s a file?"
+msgstr "Haluatko %s fileen?"
+
+#: localise.c:41 localise.c:43 localise.c:48
+#, c-format
+msgid "read"
+msgstr "lue"
+
+#: localise.c:42 localise.c:44 localise.c:56 localise.c:58
+#, c-format
+msgid ""
+"\n"
+" - "
+msgstr ""
+"\n"
+" - "
+
+#: localise.c:45 localise.c:59
+#, c-format
+msgid "do not read"
+msgstr "älä lue"
+
+#: localise.c:47 localise.c:61
+#, c-format
+msgid "Reading... "
+msgstr "Luetaan..."
+
+#: localise.c:55
+#, fuzzy
+msgctxt "do you want to"
+msgid "read"
+msgstr "lue"
+
+#: localise.c:57
+#, fuzzy, c-format
+msgctxt "I want to"
+msgid "read"
+msgstr "lue"
+
+#: localise.c:62
+#, fuzzy, c-format
+msgctxt "file has been"
+msgid "read"
+msgstr "lue"
+
+#: localise.c:64
+#, c-format
+msgid "This is some hidden gettext infos:\n"
+msgstr "Tässä on jotain piilotettuja gettext-infoja:\n"
+
+#, c-format
+#~ msgid "Do you want to a file?"
+#~ msgstr "Haluatko fileen?"
