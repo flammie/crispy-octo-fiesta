@@ -9,6 +9,12 @@ PACKAGENAME=crispy-octo-fiesta
 
 all: localise gmo $(PACKAGENAME).pot
 
+localise: localise.c gettext.h
+	$(CC) $(CFLAGS) -DENABLE_NLS localise.c -o localise
+
+gettext.h: /usr/share/gettext/gettext.h
+	cp -v $< $@
+
 $(PACKAGENAME).pot: localise.c
 	xgettext --language=C --output=$@ \
 		--package-name=$(PACKAGENAME) \
@@ -26,7 +32,7 @@ $(PACKAGENAME).pot: localise.c
 	msgfmt -cv --output-file=$@ $<
 
 clean:
-	-rm -f *.po $(PACKAGENAME).pot localise
+	-rm -f *.po $(PACKAGENAME).pot localise gettext.h
 
 update-po: $(PACKAGENAME).pot
 	for l in $(LINGUAS) ; do \

@@ -1,18 +1,16 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <locale.h>
-#include <libintl.h>
-#if HAVE_GETTEXT_H
-#include <gettext.h>
-#endif
+
+#include "gettext.h"
 
 int main(int argc, char** argv) {
-    char* rv = setlocale(LC_ALL, "");
-    if (rv == NULL) {
+    char* locale = setlocale(LC_ALL, "");
+    if (locale == NULL) {
         fprintf(stderr, "Cannot setlocale()\n");
         return EXIT_FAILURE;
     }
-    rv = bindtextdomain("crispy-octo-fiesta", "local/share/locale/");
+    const char* rv = bindtextdomain("crispy-octo-fiesta", "local/share/locale/");
     if (rv == NULL) {
         fprintf(stderr, "Cannot bindtextdomain()\n");
         return EXIT_FAILURE;
@@ -50,7 +48,6 @@ int main(int argc, char** argv) {
     /* this is a better version, for docu see:
      * https://www.gnu.org/software/gettext/manual/html_node/Contexts.html
      */
-#if HAVE_PGETTEXT
     printf(gettext("Do you want to %s a file?"), pgettext("do you want to",
                                                           "read"));
     printf(gettext("\n - "));
@@ -63,6 +60,5 @@ int main(int argc, char** argv) {
     printf("\n");
     printf(gettext("This is some hidden gettext infos:\n"));
     printf(gettext(""));
-#endif
     return EXIT_SUCCESS;
 }
