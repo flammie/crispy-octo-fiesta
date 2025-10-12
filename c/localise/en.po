@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the crispy-octo-fiesta package.
 #  <flammie@iki.fi>, 2023.
 #
-#: localise.c:65
+#: localise.c:62
 #, c-format
 msgid ""
 msgstr ""
 "Project-Id-Version: crispy-octo-fiesta 0.0.0\n"
 "Report-Msgid-Bugs-To: Flammie <flammie@iki.fi>\n"
-"POT-Creation-Date: 2025-10-12 14:46+0200\n"
-"PO-Revision-Date: 2023-05-10 13:08+0200\n"
+"POT-Creation-Date: 2025-10-12 22:40+0200\n"
+"PO-Revision-Date: 2025-10-12 22:46+0200\n"
 "Last-Translator:  <flammie@iki.fi>\n"
 "Language-Team: English\n"
 "Language: en\n"
@@ -19,34 +19,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: localise.c:25
+#: localise.c:23
 #, c-format
 msgid "Hello world!\n"
 msgstr "Hello world!\n"
 
-#: localise.c:27
+#: localise.c:25
 #, c-format
 msgid "There is now %d wug.\n"
 msgid_plural "There are now %d wugs.\n"
 msgstr[0] "There is now %d wug.\n"
 msgstr[1] "There are now %d wugs.\n"
 
-#: localise.c:31
+#: localise.c:29
 #, c-format
 msgid "Unrecognised command line argument %s\n"
 msgstr "Unrecognised command line argument %s\n"
 
-#: localise.c:41 localise.c:54
+#: localise.c:39 localise.c:51
 #, c-format
 msgid "Do you want to %s a file?"
 msgstr "Do you want to %s a file?"
 
-#: localise.c:41 localise.c:43 localise.c:48
+#: localise.c:39 localise.c:41 localise.c:46
 #, c-format
 msgid "read"
 msgstr "read"
 
-#: localise.c:42 localise.c:44 localise.c:56 localise.c:58
+#: localise.c:40 localise.c:42 localise.c:53 localise.c:55
 #, c-format
 msgid ""
 "\n"
@@ -55,35 +55,34 @@ msgstr ""
 "\n"
 " - "
 
-#: localise.c:45 localise.c:59
+#: localise.c:43 localise.c:56
 #, c-format
 msgid "do not read"
 msgstr "do not read"
 
-#: localise.c:47 localise.c:61
+#: localise.c:45 localise.c:58
 #, c-format
 msgid "Reading... "
 msgstr "Reading... "
 
-#: localise.c:55
-#, fuzzy
+#: localise.c:52
 msgctxt "do you want to"
 msgid "read"
 msgstr "read"
 
-#: localise.c:57
-#, fuzzy, c-format
+#: localise.c:54
+#, c-format
 msgctxt "I want to"
 msgid "read"
 msgstr "read"
 
-#: localise.c:62
-#, fuzzy, c-format
+#: localise.c:59
+#, c-format
 msgctxt "file has been"
 msgid "read"
 msgstr "read"
 
-#: localise.c:64
+#: localise.c:61
 #, c-format
 msgid "This is some hidden gettext infos:\n"
 msgstr "This is some hidden gettext infos:\n"
